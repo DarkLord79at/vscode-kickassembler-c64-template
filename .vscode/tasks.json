@@ -1,0 +1,44 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "ca65",
+			"problemMatcher": [
+				"$ca65",
+				"$ld65",
+				"$ld65-unresolved",
+				"$ld65-config"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"label": "ca65: Build without config"
+		},
+		{
+			"type": "process",
+			"command": "x64sc",
+			"linux": {
+				"command": "x64sc"
+			},
+			"osx": {
+				"command": "/Applications/vice-x86-64-3.7.1-gtk+/bin/x64sc"
+			},
+			"windows": {
+				"command": "D:\\Program Files (x64)\\Emulation\\GTK3VICE-3.7-win64\\bin\\x64sc.exe"
+			},
+			"args": [
+				"build/${fileBasenameNoExtension}.prg"
+			],
+			"group": {
+				"kind": "test",
+				"isDefault": true
+			},
+			"dependsOn":
+			[
+				"ca65: Build without config"				
+			],
+			"label": "Run VICE"
+		}
+	]
+}
