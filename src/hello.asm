@@ -1,19 +1,22 @@
-; hello.asm
-; Testing CC65 VS Code Integration
+// hello.asm
+// Testing Kick Assembler VS Code Integration
 
-; Constants
-    zero = $00
-    cr = $0d
-    clr = 147
-    black = $00
-    pink = $04
-    bgcolor = $d020
-    fgcolor = $d021
-    poscolor = 646
-    cursorcolor = 647
+// BASIC Loader
+BasicUpstart2(main)
 
-; Kernal Routines
-    chrout = $ffd2
+// Constants
+    .const zero = $00
+    .const cr = $0d
+    .const clr = 147
+    .const black = $00
+    .const pink = $04
+    .const bgcolor = $d020
+    .const fgcolor = $d021
+    .const poscolor = 646
+    .const cursorcolor = 647
+
+// Kernal Routines
+    .const chrout = $ffd2
 
 
 main:
@@ -26,14 +29,14 @@ main:
     lda #clr
     jsr chrout
 
-; Print demo message
+// Print demo message
     ldx #zero
     lda msg, x
-@loop:
+!loop:
     jsr chrout
     inx
     lda msg, x
-    bne @loop
+    bne !loop-
 
     lda #cr
     jsr chrout
@@ -43,5 +46,10 @@ main:
     rts
 
 
+// Data
+
+.encoding "petscii_mixed"
+
 msg:
-    .asciiz   "this is simple demo code."
+    .text   "this is simple demo code."
+    .byte   0

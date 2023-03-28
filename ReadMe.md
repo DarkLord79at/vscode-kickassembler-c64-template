@@ -1,11 +1,13 @@
-# VS Code Template for C64 Assembly Programming Using CC65
+# VS Code Template for C64 Assembly Programming Using Kick Assembler
 
-This VS Code template is intended to be used with the [ca65 Macro Assembler Language Support (6502/65816)](https://marketplace.visualstudio.com/items?itemName=tlgkccampbell.code-ca65) extension by [Cole Campbell](https://marketplace.visualstudio.com/publishers/tlgkccampbell).
+This VS Code template is intended to be used with the [Kick Assembler Studio](https://marketplace.visualstudio.com/items?itemName=sanmont.kickass-studio) extension by [SanMont](https://marketplace.visualstudio.com/publishers/sanmont). It may also work with other extensions since Kick Assembler Studio debugging/language server seems currently broken and the tasks in `tasks.json` are self-contained/independent.
+
+Kick Assembler resources: [Kick Assembler Homepage](http://www.theweb.dk/KickAssembler/)
 
 Use `Ctrl+Shift+B` to build a `.prg` in the `build` directory and `Run Test Task` to launch VICE.
 
-See `.vscode/tasks.json` for setting your OS' path to the VICE binary.
+See `.vscode/tasks.json` for setting your OS' path to the VICE binary as well as your paths to the `java` binary and `KickAss.jar`.
 
 Source code should go into the `src` directory for structuring purposes.
 
-(C) 2022 by DarkLord79at ([prof79](https://github.com/prof79)) of [VCC](https://logiker.com/vcc). The template itself is "unlicensed" 🙂.
+(C) 2023 by [DarkLord79at](https://github.com/DarkLord79at) ([prof79](https://github.com/prof79)) of [VCC](https://logiker.com/vcc). The template itself is "unlicensed" 🙂.

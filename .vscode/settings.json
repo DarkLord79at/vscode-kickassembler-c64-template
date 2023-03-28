@@ -1,6 +1,6 @@
 {
     "files.associations": {
-        "*.asm": "ca65",
-        "*.s": "ca65"
+        "*.asm": "kickassembler",
+        "*.s": "kickassembler"
     }
 }

@@ -1,3 +1,0 @@
-{
-    "params": "-C c64-asm.cfg -u __EXEHDR__ -o \"build/${fileBasenameNoExtension}.prg\""
-}

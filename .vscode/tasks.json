@@ -2,18 +2,29 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"type": "ca65",
+			"type": "shell",
 			"problemMatcher": [
-				"$ca65",
-				"$ld65",
-				"$ld65-unresolved",
-				"$ld65-config"
+				"$kickass",
+				"$kickass.single"
 			],
 			"group": {
 				"kind": "build",
 				"isDefault": true
 			},
-			"label": "ca65: Build without config"
+			"label": "Build Kick Assembler File",
+			"command": "java",
+			"args": [
+				"-jar",
+				"D:/KickAssembler/KickAss.jar",
+				"-odir",
+				"../build",
+				"-log",
+				"buildlog.txt",
+				"-showmem",
+				"-debugdump",
+				"-vicesymbols",
+				"${file}"
+			]
 		},
 		{
 			"type": "process",
@@ -36,7 +47,7 @@
 			},
 			"dependsOn":
 			[
-				"ca65: Build without config"				
+				"Build Kick Assembler File"
 			],
 			"label": "Run VICE"
 		}

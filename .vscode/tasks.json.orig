@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Build kickass src\\hello.asm",
+			"command": "C:\\Program Files\\AdoptOpenJDK\\jdk-11.0.10.9-hotspot\\bin\\java.exe",
+			"args": [
+				"-jar",
+				"D:\\KickAssembler\\KickAss.jar",
+				"-odir",
+				"./bin",
+				"-log",
+				"buildlog.txt",
+				"-showmem",
+				"-debugdump",
+				"-vicesymbols",
+				"src\\hello.asm"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			}
+		}
+	]
+}

@@ -1,9 +1,13 @@
-# Git Ignore File for C64/cc65 Assembly
+# Git Ignore File for C64/Kick Assembly
 
-**/*.o
-**/labels.txt
 **/*.prg
 **/*.d64
 **/*.t64
+**/*.dbg
+**/*.o
+**/*.sym
+**/*.vs
+**/buildlog.txt
+**/labels.txt
 
 # VS Code Files
