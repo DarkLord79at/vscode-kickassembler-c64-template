@@ -1,10 +1,10 @@
-# VS Code Template for C64 Assembly Programming Using Kick Assembler v1.0.0
+# VS Code Template for C64 Assembly Programming Using Kick Assembler v1.0.1
 
 This VS Code template is intended to be used with the [Kick Assembler Studio](https://marketplace.visualstudio.com/items?itemName=sanmont.kickass-studio) extension by [SanMont](https://marketplace.visualstudio.com/publishers/sanmont). It may also work with other extensions since Kick Assembler Studio debugging/language server seems currently broken and the tasks in `tasks.json` are self-contained/independent.
 
 Kick Assembler resources: [Kick Assembler Homepage](http://www.theweb.dk/KickAssembler/)
 
-Use `Ctrl+Shift+P` then `Tasks: Run Test Task` to automatically build and launch VICE. Use `Ctrl+Shift+B` to build a `.prg` in the `build` directory only.
+With an `.asm` file tab focused use `Ctrl+Shift+P` then `Tasks: Run Test Task` to automatically build and launch VICE based on the current source file. Use `Ctrl+Shift+B` to build a `.prg` in the `build` directory only.
 
 See `.vscode/tasks.json` for setting your OS' path to the VICE binary as well as your paths to the `java` binary and `KickAss.jar`.
 
