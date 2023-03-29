@@ -1,4 +1,4 @@
-# VS Code Template for C64 Assembly Programming Using Kick Assembler
+# VS Code Template for C64 Assembly Programming Using Kick Assembler v1.0.0
 
 This VS Code template is intended to be used with the [Kick Assembler Studio](https://marketplace.visualstudio.com/items?itemName=sanmont.kickass-studio) extension by [SanMont](https://marketplace.visualstudio.com/publishers/sanmont). It may also work with other extensions since Kick Assembler Studio debugging/language server seems currently broken and the tasks in `tasks.json` are self-contained/independent.
 
