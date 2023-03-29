@@ -7,23 +7,21 @@ BasicUpstart2(main)
 // Constants
     .const zero = $00
     .const cr = $0d
-    .const clr = 147
-    .const black = $00
-    .const pink = $04
+    .const clr = 147            // $93
     .const bgcolor = $d020
     .const fgcolor = $d021
-    .const poscolor = 646
-    .const cursorcolor = 647
+    .const poscolor = 646       // $286
+    .const cursorcolor = 647    // $287
 
 // Kernal Routines
     .const chrout = $ffd2
 
 
 main:
-    lda #black
+    lda #BLACK
     sta bgcolor
     sta fgcolor
-    lda #pink
+    lda #PURPLE
     sta poscolor
 
     lda #clr
