@@ -18,6 +18,8 @@
 				"D:/KickAssembler/KickAss.jar",
 				"-odir",
 				"../build",
+				"-libdir",
+				"./lib",
 				"-log",
 				"buildlog.txt",
 				"-showmem",
